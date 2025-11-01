@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Styled Table</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse; /* Collapses borders */
+            font-family: Arial, sans-serif;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        th, td, table {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        thead {
+            background-color: #007bff; 
+            color: white;
+            border-bottom: 3px solid #0056b3;
+        }
+        th {
+            text-align: center;
+            font-weight: bold;
+        }
+        tr:not(:first-child):nth-child(even) {
+             background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Laptop</td>
+            <td>$1200</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Monitor</td>
+            <td>$300</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Mouse</td>
+            <td>$25</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+</body>
+</html>
